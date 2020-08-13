@@ -1,0 +1,163 @@
+<html>
+  <head>
+    <title>GO Earnings</title>
+    <!-- Latest compiled and minified CSS -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="fonts/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="css/header.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+  <body class="custom-font">
+    <!-- top-header -->
+    <section class="logins">
+      <div class="row m-0">
+        <div class="col-md-6 p-0">
+          <div class="login-img">
+            <img src="img/signin-img.jpg" />
+          </div>
+        </div>
+
+        <div class="col-md-6 p-0">
+          <div class="login-content">
+            <div class="d-table">
+              <div class="d-table-cell">
+                <div class="login-form">
+                  <div class="logo">
+                    <a href="index.html">
+                      <img src="img/logoe.png" />
+                    </a>
+                  </div>
+
+                  <h3>Welcome back</h3>
+                  <p>
+                    New to Tryo?
+                    <a href="#">Sign up</a>
+                  </p>
+
+                  <form method="post" autocomplete="off">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        name="log"
+                        placeholder="Username/Email"
+                        class="form-control"
+                        required="required"
+                      />
+                    </div>
+
+                    <div class="form-group">
+                      <input
+                        type="password"
+                        name="pwd"
+                        placeholder="Password"
+                        class="form-control"
+                        required="required"
+                      />
+                    </div>
+
+                    <div class="form-group">
+                      <div class="form-checkbox">
+                        <label
+                          ><input
+                            type="checkbox"
+                            name="terms_check"
+                            class="check-class"
+                            value="Option 1"
+                            required="required"
+                          />By checking this, you agree to our
+                          <a href="#">Terms</a>
+                          and
+                          <a href="#">Privacy policy</a></label
+                        >
+                      </div>
+                    </div>
+
+                    <input
+                      type="hidden"
+                      name="action"
+                      value="my_login_action"
+                    />
+                    <div class="contact-form">
+                      <button type="submit" class="btn btn-primary">
+                        Send Message
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- jQuery library -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/popper.min.js"></script>
+
+    <script>
+      $(".product-main").owlCarousel({
+        stagePadding: 50,
+        loop: true,
+        margin: 30,
+        dots: false,
+        autoplay: false,
+        navText: [
+          '<i class="fa fa-chevron-left"></i>',
+          '<i class="fa fa-chevron-right"></i>',
+        ],
+        nav: true,
+        responsive: {
+          0: {
+            items: 2,
+          },
+          600: {
+            items: 2,
+          },
+          1000: {
+            items: 3,
+          },
+        },
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $(".brand").owlCarousel({
+          loop: true,
+          margin: 10,
+          autoplay: true,
+          nav: true,
+          dots: false,
+          autoplayTimeout: 2000,
+          responsiveClass: true,
+          responsive: {
+            0: {
+              items: 2,
+              nav: false,
+            },
+            600: {
+              items: 3,
+              nav: false,
+            },
+            1000: {
+              items: 6,
+              nav: true,
+              margin: 20,
+            },
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
